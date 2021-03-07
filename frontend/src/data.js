@@ -1,0 +1,66 @@
+const data = {
+  products: [
+    {
+      _id: 1,
+      name: 'Nike Shoe',
+      image: '/images/p1.jpg',
+      category: 'Shoe',
+      price: 10000,
+      brand: 'Nike',
+      rating: 3,
+      description: 'high quality shoe',
+    },
+    {
+      _id: 2,
+      name: 'Nike Air Shoe',
+      image: '/images/1.jpg',
+      category: 'Shoe',
+      price: 25000,
+      brand: 'Nike',
+      rating: 2.5,
+      description: ' Very high quality shoe',
+    },
+    {
+      _id: 3,
+      image: '/images/2.jpg',
+      name: 'Nike Air Jordan',
+      category: 'Shoe',
+      price: 40000,
+      brand: 'Nike',
+      rating: 5,
+      description: 'extremely high quality shoe',
+    },
+    {
+      _id: 4,
+      name: 'White Nike Air Shoe',
+      image: '/images/3.jpg',
+      category: 'Shoe',
+      price: 25000,
+      brand: 'Nike',
+      rating: 4.5,
+      description: ' a bit white high quality shoe',
+    },
+    {
+      _id: 5,
+      name: 'Rainbow Nike Air Shoe',
+      image: '/images/4.jpg',
+      category: 'Shoe',
+      price: 15000,
+      brand: 'Nike',
+      rating: 4.5,
+      description: 'pride high quality shoe',
+    },
+    {
+      _id: 6,
+      name: 'Nike Literally Air again Shoe',
+      image: '/images/5.jpg',
+      category: 'Shoe',
+      price: 60000,
+      brand: 'Nike',
+      rating: 4,
+      description: 'higher quality shoe',
+    },
+  ]
+}
+
+export default data
