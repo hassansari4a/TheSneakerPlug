@@ -1,7 +1,7 @@
-import react, { useEffect } from 'react'
+import { useEffect } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import { Link } from 'react-router-dom';
-import { addToCart } from '../actions/cartAction';
+import {addToCart, removeFromCart} from '../actions/cartAction';
 import MessageBox from '../components/MessageBox';
 
 
@@ -19,7 +19,7 @@ export default function CartScreen(props) {
   }, [dispatch, productId, qty])
   
   const removeFromCartHandler = (id) => {
-    console.log(id)
+    dispatch(removeFromCart(id))
   }
   const checkoutHandler = () => {
     props.history.push('/signin?redirect=shipping')
@@ -36,7 +36,7 @@ export default function CartScreen(props) {
                   <li key={item.product}>
                     <div className="row" >
                       <div>
-                        <img className="small" src={item.image} alt={item.name}></img>
+                        <img className="small" src={item.image} alt={item.name} />
                       </div>
                       <div className="min-30">
                         <Link to={`/product/${item.product}`}>{item.name}</Link>
