@@ -29,7 +29,7 @@ function App() {
           <Route path = "/product/:id" component={ProductScreen}></Route>
           <Route path = "/cart/:id?" component={CartScreen}></Route>
         </main>
-        <footer className="row center">The Sneaker Plug 🔌. All right reserved</footer>
+        <footer className="row center">The Sneaker Plug 🔌</footer>
       </div>
     </BrowserRouter>
   );
