@@ -1,0 +1,8 @@
+/node_modules
+
+/uploads/*.jpg
+.env
+.env.backup
+
+npm-debug.log
+

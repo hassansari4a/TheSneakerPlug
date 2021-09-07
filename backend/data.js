@@ -1,7 +1,22 @@
+import bcrypt from 'bcryptjs'
+
 const data = {
+  users: [
+    {
+      name: 'Ajal',
+      email: 'ajal@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: true
+    },
+    {
+      name: 'John',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: false
+    }
+  ],
   products: [
     {
-      _id: 1,
       name: 'Nike Shoe',
       image: '/images/p1.jpg',
       category: 'Shoe',
@@ -11,7 +26,6 @@ const data = {
       description: 'high quality shoe',
     },
     {
-      _id: 2,
       name: 'Nike Air Shoe',
       image: '/images/1.jpg',
       category: 'Shoe',
@@ -21,7 +35,6 @@ const data = {
       description: ' Very high quality shoe',
     },
     {
-      _id: 3,
       image: '/images/2.jpg',
       name: 'Nike Air Jordan',
       category: 'Shoe',
@@ -31,7 +44,6 @@ const data = {
       description: 'extremely high quality shoe',
     },
     {
-      _id: 4,
       name: 'White Nike Air Shoe',
       image: '/images/3.jpg',
       category: 'Shoe',
@@ -41,7 +53,6 @@ const data = {
       description: ' a bit white high quality shoe',
     },
     {
-      _id: 5,
       name: 'Rainbow Nike Air Shoe',
       image: '/images/4.jpg',
       category: 'Shoe',
@@ -51,7 +62,6 @@ const data = {
       description: 'pride high quality shoe',
     },
     {
-      _id: 6,
       name: 'Nike Literally Air again Shoe',
       image: '/images/5.jpg',
       category: 'Shoe',
